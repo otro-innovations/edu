@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* OTRO base typography & focus visibility (WCAG 2.4.7) */
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-white text-brand-ink antialiased; }
+  :focus-visible { @apply outline-2 outline-offset-2 outline-brand-blue; }
+  ::selection { @apply bg-brand-amber/30; }
+}
