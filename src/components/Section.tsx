@@ -1,6 +1,6 @@
 /** Page section wrapper with consistent rhythm + accessible heading anchor. */
 export default function Section({ id, eyebrow, title, lead, children, tone = 'light' }: {
-  id?: string; eyebrow?: string; title?: string; lead?: string; children: React.ReactNode; tone?: 'light' | 'mist' | 'navy';
+  id?: string; eyebrow?: string; title?: string; lead?: string; children?: React.ReactNode; tone?: 'light' | 'mist' | 'navy';
 }) {
   const tones = { light: 'bg-white', mist: 'bg-brand-mist/60', navy: 'bg-brand-navy text-white' };
   return (
@@ -13,7 +13,7 @@ export default function Section({ id, eyebrow, title, lead, children, tone = 'li
             {lead && <p className={`mt-4 text-lg ${tone === 'navy' ? 'text-white/80' : 'text-brand-ink/70'}`}>{lead}</p>}
           </header>
         )}
-        <div className="mt-10">{children}</div>
+        {children && <div className="mt-10">{children}</div>}
       </div>
     </section>
   );
