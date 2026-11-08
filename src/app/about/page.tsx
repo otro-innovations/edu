@@ -28,7 +28,7 @@ export default function AboutPage() {
           <div className="grid gap-6 sm:grid-cols-3">
             <Card title="Practising academic">Co-authored Scopus-indexed research; currently completing a Master&apos;s in China.</Card>
             <Card title="Trilingual operations">Counselor-grade English plus Mandarin and Bangla — direct access to Chinese admissions offices.</Card>
-            <Card title="Corporate accountability">Operating as ${''}a division of OTRO INNOVATIONS LLC (USA) with written scopes and transparent fees.</Card>
+            <Card title="Corporate accountability">A division of {siteConfig.legalEntityName} (USA) — written scopes, transparent fees, accountable delivery.</Card>
           </div>
         </Section>
         <Section eyebrow="Our promise" title="Honest scope, real support" lead="We coach, draft, verify and accompany. We never take exams for you, never fabricate documents, and never promise outcomes no ethical agency can control." tone="mist">
